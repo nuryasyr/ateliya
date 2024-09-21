@@ -14,7 +14,7 @@
 .sahypa-hasap {
     width: 100px;
     height: 100px;
-    border-radius: 100px;
+    border-radius: 50px;
     background-color: black;
     position: absolute; /* Ortalamak için konumlandırma */
     top: 50%; /* Dikey merkezleme */
