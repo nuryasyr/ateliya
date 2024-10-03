@@ -1,0 +1,70 @@
+.product-card {
+    width: 300px; /* Kart genişliği */
+    height: 470px; /* Kart yüksekliği */
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 8px; /* Kenar yuvarlama */
+    overflow: hidden; /* Taşan içerik gizleme */
+    position: relative; /* İçerik konumlandırması için */
+    margin-top: 50px;
+    display: flex; /* Flex düzeni kullan */
+    flex-direction: column; /* Dikey yönde yerleştir */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.product-cost {
+    background-color: yellow; /* Ürün maliyetinin arka plan rengi */
+    position: absolute; /* Üstteki konumlandırma için */
+    top: 10px; /* Üstten boşluk */
+    right: 10px; /* Sağdan boşluk */
+    padding: 5px 10px; /* İç boşluk */
+    border-radius: 4px; /* Kenar yuvarlama */
+}
+
+.product-img {
+    width: 100%; /* Resim genişliği */
+    height: 340px; /* Resim yüksekliği */
+    object-fit: cover; /* Resmin kapsama şekli */
+    flex-shrink: 0; /* Resmin boyutunu sabit tut */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.product-seller-name, .product-name {
+    font-size: 16px; /* Mobil cihazlarda daha büyük yazı boyutu */
+}
+
+
+
+.product-info {
+    padding: 10px; /* İçerik için boşluk */
+    display: flex; /* Flex düzeni kullan */
+    flex-direction: column; /* Dikey yönde yerleştir */
+    flex-grow: 1; /* Büyüme alanı */
+}
+
+.product-seller-name {
+    margin-bottom: 5px; /* Ürün adı ile arada boşluk */
+    font-weight: bold; /* Satıcı adını vurgulamak için kalın yazı */
+}
+
+.product-name {
+    display: block; /* Alt alta yerleştirmek için blok düzene geçir */
+    margin-bottom: 5px; /* Altındaki öğe ile arada boşluk */
+}
+
+.product-category-quality {
+    display: flex; /* Yana doğru yerleştirme */
+    justify-content: space-between; /* Aralarındaki boşluk */
+    margin-top: 5px; /* Üstten boşluk */
+    font-size: 13px; /* Font boyutu */
+}
+
+
+.product-date {
+    margin-top: 5px; /* Üstten boşluk */
+}
+
+.product-card {
+    width: 90%; /* Mobil cihazlar için */
+    max-width: 300px; /* Max genişlik sınırı */
+}
+

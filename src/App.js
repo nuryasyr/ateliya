@@ -1,13 +1,18 @@
 import React from "react";
 import "./index.css";
-import Sahypa from "./components/Sahypa";
+import ShopInfo from "./components/ShopInfo";
+import ProductInfo from "./components/ProductInfo";
+import Card from "./components/Card";
 
-function App() {
+
+const App = () => {
   return (
-    <>
-      <Sahypa/>
-    </>
+      <div>
+          <ShopInfo />
+          <ProductInfo />
+          <Card />
+      </div>  
   );
-}
+};
 
 export default App;
