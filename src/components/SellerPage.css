@@ -9,7 +9,23 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     flex-wrap: wrap; /* Küçük ekranlar için esnek yap */
+    
 }
+
+.product-grid {
+    display: flex; /* Flex düzeni kullan */
+    flex-wrap: wrap; /* Küçük ekranlar için esnek yap */
+    justify-content: flex-start; /* Kartların soldan hizalanması */
+    gap: 20px; /* Kartlar arasındaki boşluk */
+    margin: 0 auto; /* Sayfanın kenarlarından boşluk bırak */
+    padding: 0 20px; /* Kartların kenarlara yapışmasını engelle */
+    max-width: 1040px; /* Kartların genişliğini sınırlayarak ortala */
+    text-decoration: none;
+    color: #000;
+}
+
+
+
 
 .logo-container {
     width: 100px;

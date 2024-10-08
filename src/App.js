@@ -1,18 +1,19 @@
-import React from "react";
-import "./index.css";
-import ShopInfo from "./components/ShopInfo";
-import ProductInfo from "./components/ProductInfo";
-import Card from "./components/Card";
+import { Routes, Route } from 'react-router-dom';
+import SellerPage from './components/SellerPage';
+import ProductInfo from './components/ProductInfo';
 
 
 const App = () => {
   return (
-      <div>
-          <ShopInfo />
-          <ProductInfo />
-          <Card />
-      </div>  
+    <Routes>
+      <Route path="/" element={<SellerPage />} />
+      <Route path="/product/:id" element={<ProductInfo />} />
+    </Routes>
   );
 };
 
 export default App;
+
+
+
+
