@@ -147,4 +147,72 @@
     color: #000; /* Change color on hover */
 }
 
+.similar-products-section {
+    margin-top: 50px;
+}
+
+.similar-products-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    margin-left: 420px;
+}
+
+.similar-products-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1040px;
+    overflow: hidden;
+}
+
+.similar-products-display {
+    gap: 20px;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Daha akıcı bir geçiş için */
+}
+
+
+.prev-similar-button, .next-similar-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-similar-button:hover{
+    background-color: #63636371;
+}
+.prev-similar-button:hover{
+    background-color: #63636371;
+}
+
+.prev-similar-button {
+    left: 1px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+.next-similar-button {
+    right: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

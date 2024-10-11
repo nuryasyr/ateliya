@@ -6,10 +6,10 @@ const Card = ({ product }) => { // product prop'u alıyor
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % product.images.length); // Her ürünün kendi images dizisi
-        }, 4000); // 4 saniyede bir değişim
-        return () => clearInterval(interval); // Belleği temizlemek için
+        // const interval = setInterval(() => {
+        //     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % product.images.length); // Her ürünün kendi images dizisi
+        // }, 4000); // 4 saniyede bir değişim
+        // return () => clearInterval(interval); // Belleği temizlemek için
     }, [product.images.length]); // images uzunluğu değişiklik gösterirse tekrar başlat
 
     return (
