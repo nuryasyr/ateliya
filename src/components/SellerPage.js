@@ -1,11 +1,14 @@
-import React from 'react';
-import Card from './Card'; 
+import React, { useState } from 'react';
+import Card from './Card';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTiktok, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'; // İkonları import ediyoruz
+import { FaInstagram, FaTiktok, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'; 
 import './SellerPage.css'; 
 import productsData from './productsData';
+import Filtr from './Filtr';
 
 const SellerPage = () => {
+  const [filteredProducts, setFilteredProducts] = useState(productsData);
+
   return (
     <>
       <div className="shop-container">
@@ -19,7 +22,6 @@ const SellerPage = () => {
           </p>
         </div>
 
-        {/* habarlasmak */}
         <div className="contact-info">
           <div className="social-links">
             <div className="icon-container">
@@ -44,15 +46,19 @@ const SellerPage = () => {
             <span>{productsData[0].location}</span>
           </div>
         </div>
-        
       </div>
-        <div className="product-grid">
-          {productsData.map((product) => (
-            <Link key={product.id} to={`/product/${product.id}`}>
-              <Card product={product} />
-            </Link>
-          ))}
-        </div>
+
+      <div className="filter-area">
+        <Filtr products={productsData} setFilteredProducts={setFilteredProducts} />
+      </div>
+
+      <div className="product-grid">
+        {filteredProducts.map((product) => (
+          <Link key={product.id} to={`/product/${product.id}`}>
+            <Card product={product} />
+          </Link>
+        ))}
+      </div>
     </>
   );
 };
